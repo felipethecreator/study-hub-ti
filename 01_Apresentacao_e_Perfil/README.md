@@ -12,4 +12,4 @@ Tenho interesse nas áreas de Desenvolvimento Backend, Desenvolvimento Full-Stac
 
 - GitHub: https://github.com/felipethecreator
 - E-mail: felipinhodev@gmail.com
-- LinkedIn: adicionar link
+- LinkedIn: http://linkedin.com/in/felipe-rodrigues-queiroz-564377171
