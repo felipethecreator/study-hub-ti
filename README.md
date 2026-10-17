@@ -106,6 +106,31 @@ git diff v1.0.0..main
 
 A tag mantém a referência da versão inicial; melhorias posteriores são registradas em novos commits na `main`.
 
+### Melhoria após a versão 1.0
+
+O commit `feat: adiciona atalhos para materiais de Bootcamp I` inclui links diretos para **Atividades e Entregas** e **Anotações e Resumos** na seção de disciplinas. Assim, esses materiais podem ser acessados sem passar pela pasta intermediária. Os atalhos se adaptam ao celular e são acessíveis pelo teclado.
+
+### Envio dos commits e da tag
+
+Os dois commits e a tag foram preparados localmente. O envio depende da autenticação do Git neste computador; a integração conectada recusou a escrita com `403: Resource not accessible by integration`. A publicação no Pages também precisa ser habilitada.
+
+Após autenticar sua conta GitHub, execute na raiz deste repositório:
+
+```bash
+git push origin main
+git push origin v1.0.0
+```
+
+Depois, siga os passos de **Publicação no GitHub Pages** acima. A tag deve apontar para o commit inicial, enquanto a `main` inclui a melhoria posterior.
+
+## Verificações realizadas
+
+- Layout conferido em larguras de 320, 390, 768, 1024 e 1440 pixels, sem rolagem horizontal indevida.
+- Navegação por âncoras, atalho para o conteúdo e foco pelo teclado verificados.
+- Links dos três projetos verificados com resposta HTTP 200; atalhos acadêmicos apontam para pastas existentes.
+- Documentos e pastas da primeira etapa preservados.
+- Site funcional sem JavaScript e sem dependências externas.
+
 ## Contato
 
 - **GitHub:** [@felipethecreator](https://github.com/felipethecreator)
