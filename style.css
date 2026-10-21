@@ -863,18 +863,14 @@ h1 {
 
 .workspace-section {
   border-top: 1px solid var(--line);
-
   background: var(--surface);
 }
 
 .workspace-heading {
   display: flex;
-
   justify-content: space-between;
   align-items: end;
-
   gap: 3rem;
-
   margin-bottom: 3rem;
 }
 
@@ -884,193 +880,143 @@ h1 {
 
 .workspace-description {
   max-width: 620px;
-
   color: var(--muted);
-
   font-size: .95rem;
 }
 
 .workspace-badge {
   display: flex;
-
   align-items: center;
-
   gap: .6rem;
-
   padding: .6rem .9rem;
-
   border: 1px solid #bbcbb6;
   border-radius: 3px;
-
   background: var(--paper);
   color: var(--green);
-
   font-size: .72rem;
   font-weight: 600;
-
   white-space: nowrap;
 }
 
 .workspace-grid {
   display: grid;
-
-  grid-template-columns: .8fr 1.4fr;
-
-  align-items: stretch;
-
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
 }
 
-.workspace-info {
+.workspace-card {
   display: flex;
-
+  min-width: 0;
   flex-direction: column;
-
-  padding: 2rem;
-
+  overflow: hidden;
   border: 1px solid #cdd7c8;
   border-radius: 6px;
-
   background: var(--paper);
+}
+
+.workspace-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  min-height: 54px;
+  padding: .8rem 1.1rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .7rem;
+}
+
+.workspace-service {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  color: var(--green);
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.workspace-card-header .mono {
+  font-size: .65rem;
+  text-align: right;
+}
+
+.workspace-card-body {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  padding: 1.6rem;
 }
 
 .workspace-label {
-  margin-bottom: 2rem;
-
+  margin-bottom: .8rem;
   color: var(--accent);
-
   font-size: .65rem;
   font-weight: 700;
-
   letter-spacing: .13em;
 }
 
-.workspace-info h3 {
-  margin-bottom: 1rem;
-
-  font-size: 1.6rem;
-
+.workspace-card h3 {
+  margin-bottom: .8rem;
+  font-size: 1.45rem;
   letter-spacing: -.035em;
 }
 
-.workspace-info > p:not(.workspace-label) {
-  margin-bottom: 1rem;
-
+.workspace-card-description {
+  min-height: 5rem;
+  margin-bottom: 1.25rem;
   color: var(--muted);
-
   font-size: .9rem;
 }
 
-.workspace-features {
-  margin-top: .6rem;
-  margin-bottom: 2rem;
-
-  border-top: 1px solid var(--line);
-
-  list-style: none;
+.workspace-fallback,
+.workspace-doc-preview {
+  height: 260px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
 }
 
-.workspace-features li {
-  display: grid;
-
-  grid-template-columns: 2rem 1fr;
-
-  gap: .8rem;
-
-  padding-block: .9rem;
-
-  border-bottom: 1px solid var(--line);
-
+.workspace-fallback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: .5rem;
+  padding: 1.5rem;
   color: var(--muted);
-
-  font-size: .8rem;
+  font-size: .85rem;
 }
 
-.workspace-features li span {
-  color: var(--accent);
-
-  font-family: Consolas, "Courier New", monospace;
-
-  font-size: .7rem;
+.workspace-fallback strong {
+  color: var(--green);
+  font-size: 1rem;
 }
 
-.workspace-info .button {
+.workspace-preview-note {
+  color: var(--muted);
+  font-size: .75rem;
+}
+
+.workspace-doc-preview {
+  overflow: hidden;
+}
+
+.workspace-doc-preview iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.workspace-card-body > .workspace-preview-note {
+  margin-bottom: 1.25rem;
+}
+
+.workspace-card .button {
   align-self: flex-start;
-
   margin-top: auto;
 }
-
-/* =========================
-   DRIVE PREVIEW
-========================= */
-
-.drive-preview {
-  overflow: hidden;
-
-  border: 1px solid #cdd7c8;
-  border-radius: 6px;
-
-  background: var(--paper);
-
-  box-shadow: 10px 10px 0 #e2e9dc;
-}
-
-.drive-preview-header {
-  display: flex;
-
-  justify-content: space-between;
-  align-items: center;
-
-  gap: 1rem;
-
-  min-height: 54px;
-
-  padding: .8rem 1.1rem;
-
-  border-bottom: 1px solid var(--line);
-
-  color: var(--muted);
-
-  font-size: .7rem;
-}
-
-.drive-preview-header > div {
-  display: flex;
-
-  align-items: center;
-
-  gap: .55rem;
-
-  color: var(--green);
-
-  font-weight: 650;
-}
-
-.drive-preview-header .mono {
-  font-size: .65rem;
-}
-
-.drive-preview iframe {
-  display: block;
-
-  width: 100%;
-  height: 480px;
-
-  border: 0;
-
-  background: white;
-}
-
-.drive-preview-footer {
-  padding: .75rem 1.1rem;
-
-  border-top: 1px solid var(--line);
-
-  color: var(--muted);
-
-  font-size: .65rem;
-}
-
 /* =========================
    CONTATO
 ========================= */
@@ -1228,10 +1174,6 @@ h1 {
     padding: 1.3rem;
   }
 
-  .workspace-grid {
-    grid-template-columns: .9fr 1.1fr;
-  }
-
 }
 
 /* =========================
@@ -1368,26 +1310,28 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .workspace-info {
+  .workspace-card-body {
     padding: 1.5rem;
   }
 
-  .drive-preview {
-    box-shadow: 6px 6px 0 #e2e9dc;
+  .workspace-card-description {
+    min-height: 0;
   }
 
-  .drive-preview iframe {
-    height: 420px;
-  }
-
-  .drive-preview-header {
+  .workspace-card-header {
     align-items: flex-start;
-
     flex-direction: column;
-
     gap: .3rem;
   }
 
+  .workspace-card-header .mono {
+    text-align: left;
+  }
+
+  .workspace-fallback,
+  .workspace-doc-preview {
+    height: 230px;
+  }
   .contact-inner {
     padding-block: 3.5rem;
   }

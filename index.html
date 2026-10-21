@@ -771,8 +771,8 @@
             <p class="workspace-description">
               O Google Workspace é utilizado como apoio à
               documentação, organização e implantação do PortfolioHUB.
-              Os documentos da atividade são armazenados no Google
-              Drive e disponibilizados somente para leitura.
+              A pasta do Google Drive e o relatório no Google Docs
+              estão disponíveis para consulta.
             </p>
 
           </div>
@@ -790,94 +790,86 @@
 
         <div class="workspace-grid">
 
-          <div class="workspace-info">
-
-            <p class="workspace-label">
-              DOCUMENTAÇÃO DO PROJETO
-            </p>
-
-            <h3>
-              Arquivos do PortfolioHUB
-            </h3>
-
-            <p>
-              Esta pasta reúne documentos utilizados durante as
-              etapas de planejamento, implantação, segurança e
-              testes do projeto.
-            </p>
-
-            <p>
-              A integração permite que a documentação acadêmica
-              seja consultada diretamente pelo PortfolioHUB,
-              conectando o Google Workspace à organização do
-              projeto no GitHub.
-            </p>
-
-            <ul class="workspace-features">
-
-              <li>
-                <span>01</span>
-                Documentação centralizada no Google Drive
-              </li>
-
-              <li>
-                <span>02</span>
-                Compartilhamento configurado somente para leitura
-              </li>
-
-              <li>
-                <span>03</span>
-                Integração entre documentação, portfólio e GitHub
-              </li>
-
-            </ul>
-
-            <a
-              class="button button-primary"
-              href="https://drive.google.com/drive/folders/1ki3eEtQ_n13Yvd_Dtzv3EKxM6WKfyHQv?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Abrir no Google Drive
-              <span aria-hidden="true">↗</span>
-            </a>
-
-          </div>
-
-          <div class="drive-preview">
-
-            <div class="drive-preview-header">
-
-              <div>
-                <span
-                  class="status-dot"
-                  aria-hidden="true"
-                ></span>
-
+          <article class="workspace-card">
+            <div class="workspace-card-header">
+              <span class="workspace-service">
+                <span class="status-dot" aria-hidden="true"></span>
                 Google Drive
+              </span>
+              <span class="mono">PortfolioHUB / documentos</span>
+            </div>
+
+            <div class="workspace-card-body">
+              <p class="workspace-label">DOCUMENTOS DO PROJETO</p>
+              <h3>Documentos do projeto</h3>
+              <p class="workspace-card-description">
+                Pasta pública da documentação do PortfolioHUB,
+                disponível somente para leitura.
+              </p>
+
+              <div class="workspace-fallback">
+                <strong>Google Drive</strong>
+                <p>A prévia da pasta não está disponível nesta página.</p>
+                <p class="workspace-preview-note">
+                  A visualização completa pode ser aberta no Google Drive.
+                </p>
               </div>
 
-              <span class="mono">
-                PortfolioHUB / documentos
+              <a
+                class="button button-primary"
+                href="https://drive.google.com/drive/folders/1ki3eEtQ_n13Yvd_Dtzv3EKxM6WKfyHQv?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Abrir pasta no Google Drive
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="workspace-card">
+            <div class="workspace-card-header">
+              <span class="workspace-service">
+                <span class="status-dot" aria-hidden="true"></span>
+                Google Docs
               </span>
-
+              <span class="mono">PortfolioHUB / relatório</span>
             </div>
 
-            <iframe
-              src="https://drive.google.com/embeddedfolderview?id=1ki3eEtQ_n13Yvd_Dtzv3EKxM6WKfyHQv#grid"
-              title="Documentos do PortfolioHUB no Google Drive"
-              loading="lazy"
-              referrerpolicy="no-referrer"
-            ></iframe>
+            <div class="workspace-card-body">
+              <p class="workspace-label">RELATÓRIO DE IMPLANTAÇÃO</p>
+              <h3>Relatório de Implantação</h3>
+              <p class="workspace-card-description">
+                Planejamento, integração com GitHub, segurança,
+                controle de acesso e testes realizados durante a
+                implantação do PortfolioHUB.
+              </p>
 
-            <div class="drive-preview-footer">
-              Arquivos compartilhados somente para visualização
+              <div class="workspace-doc-preview">
+                <iframe
+                  src="https://docs.google.com/document/d/1IpfFzPCtSd61jrL333mRwTf6wyBOzKtmKl-GPyyvcA8/preview"
+                  title="Prévia do relatório de implantação no Google Docs"
+                  loading="lazy"
+                ></iframe>
+              </div>
+
+              <p class="workspace-preview-note">
+                Se a prévia não carregar, abra o relatório no Google Docs.
+              </p>
+
+              <a
+                class="button button-primary"
+                href="https://docs.google.com/document/d/1IpfFzPCtSd61jrL333mRwTf6wyBOzKtmKl-GPyyvcA8/edit?usp=drivesdk"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visualizar relatório
+                <span aria-hidden="true">↗</span>
+              </a>
             </div>
-
-          </div>
+          </article>
 
         </div>
-
       </div>
 
     </section>
